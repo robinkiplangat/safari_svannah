@@ -1,4 +1,4 @@
-# Safari Savanna - Interactive Learning Platform
+# Safari Svannah - Interactive Learning Platform
 
 An engaging educational platform for toddlers (2-4 years) to learn about African wildlife and life lessons through interactive stories, puzzles, and games.
 
