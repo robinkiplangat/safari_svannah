@@ -4,26 +4,20 @@
     "devCommand": "npm run dev",
     "installCommand": "npm install",
     "framework": "nextjs",
-    "env": {
-        "CLERK_PUBLIC_KEY": "@clerk_public_key",
-        "CLERK_SECRET_KEY": "@clerk_secret_key"
-    },
+    "outputDirectory": ".next",
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/next"
+        }
+    ],
     "routes": [
         {
-            "src": "/static/(.*)",
-            "dest": "/static/$1"
-        },
-        {
-            "src": "/favicon.ico",
-            "dest": "/favicon.ico"
-        },
-        {
-            "src": "/manifest.json",
-            "dest": "/manifest.json"
-        },
-        {
             "src": "/(.*)",
-            "dest": "/index.html"
+            "dest": "/"
         }
-    ]
+    ],
+    "env": {
+        "NEXT_PUBLIC_API_URL": "http://localhost:8000"
+    }
 } 
